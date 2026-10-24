@@ -33,12 +33,156 @@ footer{border-top:1px solid var(--line);padding:22px 20px;color:var(--muted);fon
       </div>
     </div>
     <p>Guide officiel des codes radio, procédures d'urgence et alphabets de communication du SASP SUD.</p>
+    <nav>
+      <a href="#statuts">Statuts Radio</a>
+      <a href="#codes">10-Codes</a>
+      <a href="#codes3">3-Codes</a>
+      <a href="#phonetique">Alphabet Phonétique</a>
+      <a href="#simulateur">Simulateur Radio</a>
+    </nav>
   </div>
 </header>
+
+<main class="wrap">
+  <div class="grid">
+    <!-- STATUTS -->
+    <section id="statuts" class="card span-4">
+      <h2>Statuts Radio</h2>
+      <div class="sub">État de service des unités</div>
+      <div class="pills">
+        <div class="pill"><strong>Code 4</strong><span>Situation sous contrôle / Fin d'intervention</span></div>
+        <div class="pill"><strong>10-4</strong><span>Bien reçu / Compris</span></div>
+        <div class="pill"><strong>10-7</strong><span>Fin de service (Off-duty)</span></div>
+        <div class="pill"><strong>10-8</strong><span>En service (On-duty / Disponible)</span></div>
+        <div class="pill"><strong>10-97</strong><span>Arrivé sur les lieux</span></div>
+        <div class="pill"><strong>10-41</strong><span>Prise de service</span></div>
+      </div>
+    </section>
+
+    <!-- 10-CODES -->
+    <section id="codes" class="card span-8">
+      <h2>10-Codes Principaux</h2>
+      <div class="sub">Abréviations courantes en intervention</div>
+      <div class="list">
+        <div class="item"><div class="code">10-0</div><div class="desc">Attention / Prudence générale</div><span class="tag">Général</span></div>
+        <div class="item"><div class="code">10-1</div><div class="desc">Signal radio faible / Inaudible</div><span class="tag">Radio</span></div>
+        <div class="item"><div class="code">10-2</div><div class="desc">Signal radio fort / Clair</div><span class="tag">Radio</span></div>
+        <div class="item"><div class="code">10-6</div><div class="desc">Occupé / En attente</div><span class="tag">Statut</span></div>
+        <div class="item"><div class="code">10-10</div><div class="desc">Intervention mineure en cours</div><span class="tag">Action</span></div>
+        <div class="item"><div class="code">10-20</div><div class="desc">Position / Localisation actuelle</div><span class="tag">Position</span></div>
+        <div class="item"><div class="code">10-33</div><div class="desc">Urgence absolue / Silence radio demandé</div><span class="tag">Urgence</span></div>
+        <div class="item"><div class="code">10-99</div><div class="desc">Officier en détresse (Besoin d'aide immédiate)</div><span class="tag">Urgence</span></div>
+      </div>
+    </section>
+
+    <!-- 3-CODES -->
+    <section id="codes3" class="card span-6">
+      <h2>3-Codes / Codes d'Urgence</h2>
+      <div class="sub">Niveaux d'intervention et menaces</div>
+      <div class="list">
+        <div class="item"><div class="code">Code 2</div><div class="desc">Intervention urgente sans sirène ni gyrophare (Discret)</div></div>
+        <div class="item"><div class="code">Code 3</div><div class="desc">Intervention prioritaire avec sirène et gyrophare</div></div>
+        <div class="item"><div class="code">Code 99</div><div class="desc">Situation critique / Unité menacée</div></div>
+      </div>
+    </section>
+
+    <!-- ALPHABET PHONETIQUE -->
+    <section id="phonetique" class="card span-6">
+      <h2>Alphabet Phonétique</h2>
+      <div class="sub">Standard international (OTAN)</div>
+      <div class="alphabet">
+        <div class="letter"><b>A</b><span>Alpha</span></div>
+        <div class="letter"><b>B</b><span>Bravo</span></div>
+        <div class="letter"><b>C</b><span>Charlie</span></div>
+        <div class="letter"><b>D</b><span>Delta</span></div>
+        <div class="letter"><b>E</b><span>Echo</span></div>
+        <div class="letter"><b>F</b><span>Foxtrot</span></div>
+        <div class="letter"><b>G</b><span>Golf</span></div>
+        <div class="letter"><b>H</b><span>Hotel</span></div>
+        <div class="letter"><b>I</b><span>India</span></div>
+        <div class="letter"><b>J</b><span>Juliett</span></div>
+        <div class="letter"><b>K</b><span>Kilo</span></div>
+        <div class="letter"><b>L</b><span>Lima</span></div>
+        <div class="letter"><b>M</b><span>Mike</span></div>
+        <div class="letter"><b>N</b><span>November</span></div>
+        <div class="letter"><b>O</b><span>Oscar</span></div>
+        <div class="letter"><b>P</b><span>Papa</span></div>
+        <div class="letter"><b>Q</b><span>Quebec</span></div>
+        <div class="letter"><b>R</b><span>Romeo</span></div>
+        <div class="letter"><b>S</b><span>Sierra</span></div>
+        <div class="letter"><b>T</b><span>Tango</span></div>
+        <div class="letter"><b>U</b><span>Uniform</span></div>
+        <div class="letter"><b>V</b><span>Victor</span></div>
+        <div class="letter"><b>W</b><span>Whiskey</span></div>
+        <div class="letter"><b>X</b><span>X-ray</span></div>
+        <div class="letter"><b>Y</b><span>Yankee</span></div>
+        <div class="letter"><b>Z</b><span>Zulu</span></div>
+      </div>
+    </section>
+
+    <!-- SIMULATEUR RADIO -->
+    <section id="simulateur" class="card span-12">
+      <h2>Générateur / Simulateur de Message Radio</h2>
+      <div class="sub">Préparez un message clair et structuré pour les transmissions du SASP SUD</div>
+      <div class="formrow">
+        <div>
+          <label for="indicatif">Indicatif Unité</label>
+          <input type="text" id="indicatif" placeholder="Ex: Lincoln-1">
+        </div>
+        <div>
+          <label for="statutSelect">Code / Statut</label>
+          <select id="statutSelect">
+            <option value="10-4">10-4 (Compris)</option>
+            <option value="10-8">10-8 (En service)</option>
+            <option value="10-20">10-20 (Position)</option>
+            <option value="10-97">10-97 (Arrivé sur les lieux)</option>
+            <option value="Code 4">Code 4 (Situation sous contrôle)</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label for="details">Détails / Localisation</label>
+        <input type="text" id="details" placeholder="Ex: Pillbox Hill, demande renforts légers">
+      </div>
+      <div class="actions">
+        <button class="btn" onclick="genererMessage()">Générer la transmission</button>
+        <button class="btn secondary" onclick="effacerMessage()">Réinitialiser</button>
+      </div>
+      <div class="result" id="resultatRadio"></div>
+    </section>
+  </div>
+</main>
+
 <footer>
   <div class="wrap">
     <p>&copy; SASP SUD - Document officiel de service</p>
   </div>
 </footer>
+
+<script>
+function genererMessage() {
+  const indicatif = document.getElementById('indicatif').value.trim() || 'Unité';
+  const statut = document.getElementById('statutSelect').value;
+  const details = document.getElementById('details').value.trim();
+  
+  let message = `Ici ${indicatif}, ${statut}`;
+  if(details) {
+    message += ` - ${details}`;
+  }
+  message += ".";
+
+  const res = document.getElementById('resultatRadio');
+  res.style.display = 'block';
+  res.innerHTML = `<strong>Transmission radio formatée :</strong><br><span style="color:#8fc2ff; font-family:monospace; font-size:1.05rem;">"${message}"</span>`;
+}
+
+function effacerMessage() {
+  document.getElementById('indicatif').value = '';
+  document.getElementById('details').value = '';
+  const res = document.getElementById('resultatRadio');
+  res.style.display = 'none';
+  res.innerHTML = '';
+}
+</script>
 </body>
 </html>
